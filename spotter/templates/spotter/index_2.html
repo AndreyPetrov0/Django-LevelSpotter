@@ -8,14 +8,18 @@
 
  <body>
  	<h1>Введіть значення на дісплею датчика</h1>
-    <form action="{% url 'index_1' %}">
-		<button type="submit">Назад</button>
-	</form>
-	<form action="{% url 'index_3' %}">
-		{% csrf_token %}
-		{{form.as_p}}
+
+    <form method="get" action="{% url 'index_3' %}">
+<!--		{% csrf_token %}-->
+<!--		{{form.as_p}}-->
+		<input type="text" name="number_value">
 		<button type="submit">Прийняти</button>
 	</form>
+
+ 	<form action="{% url 'index_1' %}">
+		<button type="submit">Назад</button>
+	</form>
+
  </body>
 
 </html>

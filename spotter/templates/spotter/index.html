@@ -8,8 +8,6 @@
     <h1>Шкала приладу</h1>
 
 	<form method="get" action="{% url 'index_1' %}">
-<!--		{% csrf_token %}-->
-<!--		{{form.as_p}}-->
 		<button type="submit" name="csale" value="630">630</button>
 	</form>
 
@@ -17,12 +15,24 @@
 		<button type="submit" name="csale" value="900">900</button>
 	</form>
 
-	<form action="{% url 'index_1' %}">
-		<button type="submit">1000</button>
+	<form method="get" action="{% url 'index_1' %}">
+		<button type="submit" name="csale" value="1000">1000</button>
 	</form>
 
-	<form action="{% url 'index_1' %}">
-		<button type="submit">1600</button>
+	<form method="get" action="{% url 'index_1' %}">
+		<button type="submit" name="csale" value="1600">1600</button>
+	</form>
+
+	<form method="get" action="{% url 'index_1' %}">
+		<button type="submit" name="csale" value="2000">2000</button>
+	</form>
+
+	<form method="get" action="{% url 'index_1' %}">
+		<button type="submit" name="csale" value="2500">2500</button>
+	</form>
+
+	<form method="get" action="{% url 'index_1' %}">
+		<button type="submit" name="csale" value="4000">4000</button>
 	</form>
 
 </body>
