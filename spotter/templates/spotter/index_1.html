@@ -8,14 +8,15 @@
 
  <body>
  	<h1>Введіть корегувальне значення в мм.</h1>
-	<input type="text"></input><br>
+<!--	<input type="text"></input><br>-->
 	<form action="{% url 'home' %}">
 		<button type="submit">Назад</button>
 	</form>
 	<form method="get" action="{% url 'index_2' %}">
-		{% csrf_token %}
-		{{form.as_p}}
-		<button type="submit" name="csale" value="630">630</button>
+<!--		{% csrf_token %}-->
+<!--		{{form.as_p}}-->
+		<input type="text"></input><br>
+		<button type="submit" name="sameone">Прийняти</button>
 	</form>
 	
  </body>
