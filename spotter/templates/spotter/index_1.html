@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+ 
+ <head>
+	<title>Level Spoter</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+
+ <body>
+ 	<h1>Введіть корегувальне значення в мм.</h1>
+	<input type="text"></input><br>
+	<form action="{% url 'home' %}">
+		<button type="submit">Назад</button>
+	</form>
+	<form method="get" action="{% url 'index_2' %}">
+		{% csrf_token %}
+		{{form.as_p}}
+		<button type="submit" name="csale" value="630">630</button>
+	</form>
+	
+ </body>
+
+</html>
