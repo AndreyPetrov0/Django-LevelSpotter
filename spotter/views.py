@@ -26,7 +26,10 @@ def  index_1(request):
 
 def  index_2(request):
     if lst_res['correct_value'] == 0:
-        lst_res['correct_value'] = int(request.GET['correct_value'])
+        if request.GET['correct_value'] == '':
+            lst_res['correct_value'] = 0
+        else:
+            lst_res['correct_value'] = int(request.GET['correct_value'])
         print(lst_res, 'index_2 IF')
     else:
         lst_res['number_value'] = 0
@@ -37,7 +40,10 @@ def  index_2(request):
 
 def  index_3(request):
     if lst_res['number_value'] == 0:
-        lst_res['number_value'] = int(request.GET['number_value'])
+        if request.GET['number_value'] == '':
+            lst_res['number_value'] = 0
+        else:
+            lst_res['number_value'] = int(request.GET['number_value'])
         print(lst_res, 'index_3 IF')
     else:
         pass
