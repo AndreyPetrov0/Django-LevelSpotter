@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from . import func_calc
 
 cache = {'csale': 0, 'correct_value': 0, 'number_value': 0}
 
@@ -30,6 +31,7 @@ def  index_2(request):
             cache['correct_value'] = 0
         else:
             cache['correct_value'] = int(request.GET['correct_value'])
+            print(type(request.GET['correct_value']))
         print(cache, 'index_2 IF')
     else:
         cache['number_value'] = 0
@@ -50,3 +52,9 @@ def  index_3(request):
 
     print(request.GET, 'index_3')
     return render(request, 'spotter/index_3.html')
+
+def index_result(request):
+    if request.GET == 'get':
+        display_result = '12345678'
+        print('ReSuLt')
+    return render(request, 'spotter/index_result.html')

@@ -10,7 +10,7 @@
  	<h1>Введіть корегувальне значення в мм.</h1>
 
 	<form method="get" action="{% url 'index_2' %}" name="form_correct">
-		<input type="text" name="correct_value">
+		<input type="text" name="correct_value" readonly="" value="0">
 		<br><br>
 		<button type="submit">Прийняти</button>
 		<br><br>
@@ -26,7 +26,7 @@
 		<input type="button" value="8" onclick="form_correct.correct_value.value+='8'">
 		<input type="button" value="9" onclick="form_correct.correct_value.value+='9'">
 		<br><br>
-		<input type="button" value="-" onclick="form_correct.correct_value.value+='-'">
+		<input type="button" value="-" onclick="form_correct.correct_value.value-= form_correct.correct_value.value * 2">
 		<input type="button" value="0" onclick="form_correct.correct_value.value+='0'">
 		<input type="button" value="<" onclick="form_correct.correct_value.value= form_correct.correct_value.value.slice(0,-1)">
 
