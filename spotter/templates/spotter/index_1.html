@@ -9,8 +9,8 @@
  <body>
  	<h1>Введіть корегувальне значення в мм.</h1>
 
-	<form method="get" action="{% url 'index_2' %}" name="form_correct">
-		<input type="text" name="correct_value" readonly="" value="0">
+	<form method="get" action="{% url 'index_2' %}" name="form_correct" >
+		<input type="text" name="correct_value" readonly="readonly" value="0" maxlength="3">
 		<br><br>
 		<button type="submit">Прийняти</button>
 		<br><br>

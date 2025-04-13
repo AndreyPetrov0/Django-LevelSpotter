@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--0kr#yj8lfi=a%w)vc^kvzhiu))vllif4np-f(iv7f_kq0b&4s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'spotter.apps.SpotterConfig',
+    'levelspotter',
 ]
 
 MIDDLEWARE = [

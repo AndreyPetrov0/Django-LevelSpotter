@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Level Spoter</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+</head>
+<body>
+  <h1>Результат розрахунку введыть у датчик</h1>
+
+    <form method="get" name="form_result">
+		<label>RESULT: </label>
+<!--		<input type="text" id="demo" name="display_result"></input><br>-->
+		<input type="button" value="Розрахувати" onclick="myFunction()">
+		<input type="button" onclick="myFunction()" value="Function">
+		<p id="demo"></p>
+
+		<script>
+		function myFunction() {
+		  document.getElementById("demo").innerHTML = "Hello World";
+		}
+		</script>
+	</form>
+	<form action="{% url 'home' %}">
+		<button type="submit">До меню</button>
+	</form>
+</body>
+</html>

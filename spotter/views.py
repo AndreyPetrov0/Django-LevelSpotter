@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from . import func_calc
+# from func_calc import test_func
 
 cache = {'csale': 0, 'correct_value': 0, 'number_value': 0}
 
@@ -54,7 +54,5 @@ def  index_3(request):
     return render(request, 'spotter/index_3.html')
 
 def index_result(request):
-    if request.GET == 'get':
-        display_result = '12345678'
-        print('ReSuLt')
+    # f = {"1": test_func()}
     return render(request, 'spotter/index_result.html')
