@@ -7,35 +7,20 @@
 	<link type="text/css" href="{% static 'spotter/css/style.css' %}" rel="stylesheet">
 </head>
 <body>
+
 	<div>
 		<h1>Шкала приладу</h1>
 
 		<form method="get" action="{% url 'index_1' %}" >
-			<button type="submit" class="btn" name="csale" value="630">630</button>
-		</form>
-
-		<form method="get" action="{% url 'index_1' %}">
-			<button type="submit" name="csale" value="900">900</button>
-		</form>
-
-		<form method="get" action="{% url 'index_1' %}">
-			<button type="submit" name="csale" value="1000">1000</button>
-		</form>
-
-		<form method="get" action="{% url 'index_1' %}">
-			<button type="submit" name="csale" value="1600">1600</button>
-		</form>
-
-		<form method="get" action="{% url 'index_1' %}">
-			<button type="submit" name="csale" value="2000">2000</button>
-		</form>
-
-		<form method="get" action="{% url 'index_1' %}">
-			<button type="submit" name="csale" value="2500">2500</button>
-		</form>
-
-		<form method="get" action="{% url 'index_1' %}">
-			<button type="submit" name="csale" value="4000">4000</button>
+			<ul class="list_csale">
+				<li><button type="submit" class="btn" name="csale" value="630">± 315 мм | 630 мм</button></li>
+				<li><button type="submit" class="btn" name="csale" value="900">900 мм</button></li>
+				<li><button type="submit" class="btn" name="csale" value="1000">1000 мм</button></li>
+				<li><button type="submit" class="btn" name="csale" value="1600">1600 мм</button></li>
+				<li><button type="submit" class="btn" name="csale" value="2000">2000 мм</button></li>
+				<li><button type="submit" class="btn" name="csale" value="2500">2500 мм</button></li>
+				<li><button type="submit" class="btn" name="csale" value="4000">4000 мм</button></li>
+			</ul>
 		</form>
 	</div>
 

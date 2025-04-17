@@ -11,15 +11,9 @@
     <form method="get" name="form_result">
 		<label>RESULT: </label>
 <!--		<input type="text" id="demo" name="display_result"></input><br>-->
-		<input type="button" value="Розрахувати" onclick="myFunction()">
-		<input type="button" onclick="myFunction()" value="Function">
-		<p id="demo"></p>
 
-		<script>
-		function myFunction() {
-		  document.getElementById("demo").innerHTML = "Hello World";
-		}
-		</script>
+
+
 	</form>
 	<form action="{% url 'home' %}">
 		<button type="submit">До меню</button>
