@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
+.base_form {
+    list-style: none;
+}
+
 body {
     color: #FFF;
-    background-color: #2DFF42;
+    background: url('../images/back_fon.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.open_index {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -14,18 +23,20 @@ body {
 
 h1 {
     font-family: "Times New Roman";
-    color: #FFFFFF;
+    color: black;
     text-align: center;
     font-style: italic;
 }
 
-div {
-    background: black;
-    width: 250px;
+.div_csale {
+    background: transparent;
+    width: 280px;
     height: 430px;
-    border: 2px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border-radius: 10px;
-    margin: 110px;
+    margin: 80px;
     padding: 5px;
 }
 
@@ -46,4 +57,14 @@ div {
     outline: none;
     border-radius: 15px 2px 15px 2px;
     font-size: 25px;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
+
+.btn:hover {
+    transform: translateY(-2px);
+    background-color: #FFFF62;
+

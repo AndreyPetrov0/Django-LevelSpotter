@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFF;
+    background: url('../images/back_fon.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.base_form {
+    list-style: none;
+}
+
+.open_index {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Times New Roman";
+    color: #FFFFFF;
+    text-align: center;
+    font-style: italic;
+}
+
+.div_number {
+    background: transparent;
+    width: 280px;
+    height: 430px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin: 80px;
+    padding: 5px;
+}
+
+.display_number {
+    width: 150px;
+    height: 35px;
+    border: 2px;
+    border-radius: 2px;
+    margin: 15px;
+    font-size: 25px;
+    margin-left: 22%;
+}
+
+
+.cell_back-and-accept {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cell_back-and-accept li {
+    display: inline-block;
+    padding: 2px;
+}
+
+.btn-back {
+    background: #2326FC;
+    width: 90px;
+    height: 40px;
+    outline: none;
+    border-radius: 15px 0px 0px 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.btn-accept {
+    background: #2326FC;
+    width: 90px;
+    height: 40px;
+    outline: none;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 15px;
+    color: white;
+}
+
+.table_number {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.table_number td {
+    padding: 3px;
+}
+
+.btn_num {
+    background: #7700E8;
+    width: 55px;
+    height: 35px;
+    outline: none;
+    border-radius: 7px 7px 7px 7px;
+    font-size: 15px;
+    color: white;
+
+}
