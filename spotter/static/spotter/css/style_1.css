@@ -76,6 +76,11 @@ h1 {
     color: white;
 }
 
+.btn-back:hover {
+    transform: translateX(-2px);
+    background-color: #5558FC;
+}
+
 .btn-accept {
     background: #2326FC;
     width: 90px;
