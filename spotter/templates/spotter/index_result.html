@@ -3,13 +3,17 @@
 <head>
     <title>Level Spoter</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 </head>
 <body>
   <h1>Результат розрахунку введыть у датчик</h1>
 
-    <form method="get">
-		<input type="text" value="0">
-		<button type="submit">Розрахувати</button>
+    <form method="get" name="form_result">
+		<label>RESULT: </label>
+<!--		<input type="text" id="demo" name="display_result"></input><br>-->
+
+
+
 	</form>
 	<form action="{% url 'home' %}">
 		<button type="submit">До меню</button>

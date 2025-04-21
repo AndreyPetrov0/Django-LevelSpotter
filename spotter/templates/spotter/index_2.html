@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
- 
  <head>
 	<title>Level Spoter</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -9,11 +8,26 @@
  <body>
  	<h1>Введіть значення на дісплею датчика</h1>
 
-    <form method="get" action="{% url 'index_3' %}">
-<!--		{% csrf_token %}-->
-<!--		{{form.as_p}}-->
-		<input type="text" name="number_value">
+    <form method="get" action="{% url 'index_3' %}" name="form_number">
+		<input type="text" name="number_value" readonly="">
+		<br><br>
 		<button type="submit">Прийняти</button>
+		<br><br>
+		<input type="button" value="1" onclick="form_number.number_value.value+='1'">
+		<input type="button" value="2" onclick="form_number.number_value.value+='2'">
+		<input type="button" value="3" onclick="form_number.number_value.value+='3'">
+		<br><br>
+		<input type="button" value="4" onclick="form_number.number_value.value+='4'">
+		<input type="button" value="5" onclick="form_number.number_value.value+='5'">
+		<input type="button" value="6" onclick="form_number.number_value.value+='6'">
+		<br><br>
+		<input type="button" value="7" onclick="form_number.number_value.value+='7'">
+		<input type="button" value="8" onclick="form_number.number_value.value+='8'">
+		<input type="button" value="9" onclick="form_number.number_value.value+='9'">
+		<br><br>
+		<input type="button" value="C" onclick="form_number.number_value.value= ''">
+		<input type="button" value="0" onclick="form_number.number_value.value+='0'">
+		<input type="button" value="<" onclick="form_number.number_value.value= form_number.number_value.value.slice(0,-1)">
 	</form>
 
  	<form action="{% url 'index_1' %}">

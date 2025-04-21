@@ -1,25 +1,65 @@
+{% load static %}
+
 <!DOCTYPE HTML>
-<html>
- 
- <head>
+<html lang="en">
+<head>
 	<title>Level Spoter</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- </head>
+	<link type="text/css" href="{% static 'spotter/css/style_1.css' %}" rel="stylesheet">
+</head>
 
- <body>
- 	<h1>Введіть корегувальне значення в мм.</h1>
+	<body>
 
-	<form method="get" action="{% url 'index_2' %}">
-<!--		{% csrf_token %}-->
-<!--		{{form.as_p}}-->
-		<input type="text" name="correct_value">
-		<button type="submit">Прийняти</button>
-	</form>
+		<ul class="base_form">
 
- 	<form action="{% url 'home' %}">
-		<button type="submit">Назад</button>
-	</form>
-	
- </body>
+			<li>
+				{% include 'spotter/includes/base_1.html' %}
+			</li>
+
+			<li class="open_index">
+
+				<div class="div_number">
+					<h1>Введіть корегувальне значення в мм.</h1>
+
+					<form method="get" action="{% url 'index_2' %}" name="form_correct" >
+						<input type="text" class="display_number" name="correct_value" readonly="readonly" value="0" maxlength="3">
+
+						<ul class="cell_back-and-accept">
+							<li><button class="btn-back" form="click_back" type="submit">Назад</button></li>
+							<li><button class="btn-accept" type="submit">Прийняти</button></li>
+						</ul>
+
+
+						<table class="table_number">
+							<tr>
+								<td><input type="button" class="btn_num" value="1" onclick="form_correct.correct_value.value+='1'"></td>
+								<td><input type="button" class="btn_num" value="2" onclick="form_correct.correct_value.value+='2'"></td>
+								<td><input type="button" class="btn_num" value="3" onclick="form_correct.correct_value.value+='3'"></td>
+							</tr>
+							<tr>
+								<td><input type="button" class="btn_num" value="4" onclick="form_correct.correct_value.value+='4'"></td>
+								<td><input type="button" class="btn_num" value="5" onclick="form_correct.correct_value.value+='5'"></td>
+								<td><input type="button" class="btn_num" value="6" onclick="form_correct.correct_value.value+='6'"></td>
+							</tr>
+							<tr>
+								<td><input type="button" class="btn_num" value="7" onclick="form_correct.correct_value.value+='7'"></td>
+								<td><input type="button" class="btn_num" value="8" onclick="form_correct.correct_value.value+='8'"></td>
+								<td><input type="button" class="btn_num" value="9" onclick="form_correct.correct_value.value+='9'"></td>
+							</tr>
+							<tr>
+								<td><input type="button" class="btn_num" value="-" onclick="form_correct.correct_value.value-= form_correct.correct_value.value * 2"></td>
+								<td><input type="button" class="btn_num" value="0" onclick="form_correct.correct_value.value+='0'"></td>
+								<td><input type="button" class="btn_num" value="<" onclick="form_correct.correct_value.value= form_correct.correct_value.value.slice(0,-1)"></td>
+							</tr>
+						</table>
+					</form>
+
+					<form action="{% url 'home' %}" id="click_back">
+					</form>
+				</div>
+
+			</li>
+		</ul>
+ 	</body>
 
 </html>
