@@ -1,11 +1,41 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+	<title>Level Spotter</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>LevelSpotter</title>
+    <meta name="viewport" content="width=device-wodth, initial-scale=1.0">
+	<link type="text/css" href="{% static 'spotter/css/style_base.css' %}" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-<h1>НАПАНЕЛЬ НАВИГАЦИИ</h1>
-{% block content %} {% endblock %}
-</body>
+
+	<body>
+		<!-- БАЗОВАЯ ФОРМА -->
+		<div class="container">
+			<nav>
+				<img src="../spotter/static/spotter/images/logo.png" class="logo-icon">
+				<label class="logo">Level Spotter</label>
+
+				<input type="checkbox" id="check">
+				<label for="check" class="icons">
+					<i class='bx bx-menu' id="menu-icon"></i>
+					<i class='bx bx-x' id="close-icon"></i>
+				</label>
+
+				<ul class="navbar">
+			        <li><a class="active" href="#">Корегування</a></li>
+			        <li><a href="#">Розміщення</a></li>
+			        <li><a href="#">Інструкція</a></li>
+			        <li><a href="#">Завантажити</a></li>
+				</ul>
+			</nav>
+		<!-- БАЗОВАЯ ФОРМА + DIV в конце -->
+            {% block content %}
+
+            {% endblock %}
+		</div>  <!-- DIV базовой формы -->
+
+
+	</body>
 </html>

@@ -1,38 +1,36 @@
-{% load static %}
+{% extends 'base.html' %}
 
+{% block content %}
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>LevelSpotter</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Level Spotter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-wodth, initial-scale=1.0">
 	<link type="text/css" href="{% static 'spotter/css/style.css' %}" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-	<body>
-		<ul class="base_form">
-			<li>
-				{% include 'spotter/includes/base_1.html' %}
-			</li>
+	<li class="open_index">
+		<div class=div_csale>
+			<h1 class="title-container">Шкала приладу</h1>
 
-			<li class="open_index">
-				<div class=div_csale>
-					<h1>Шкала приладу</h1>
+			<form method="get" action="{% url 'index_1' %}" >
+				<ul class="list_csale">
+					<li><button type="submit" class="btn" name="csale" value="630">± 315 мм | 630 мм</button></li>
+					<li><button type="submit" class="btn" name="csale" value="900">900 мм</button></li>
+					<li><button type="submit" class="btn" name="csale" value="1000">1000 мм</button></li>
+					<li><button type="submit" class="btn" name="csale" value="1600">1600 мм</button></li>
+					<li><button type="submit" class="btn" name="csale" value="2000">2000 мм</button></li>
+					<li><button type="submit" class="btn" name="csale" value="2500">2500 мм</button></li>
+					<li><button type="submit" class="btn" name="csale" value="4000">4000 мм</button></li>
+				</ul>
+			</form>
+		</div>
+	</li>
 
-					<form method="get" action="{% url 'index_1' %}" >
-						<ul class="list_csale">
-							<li><button type="submit" class="btn" name="csale" value="630">± 315 мм | 630 мм</button></li>
-							<li><button type="submit" class="btn" name="csale" value="900">900 мм</button></li>
-							<li><button type="submit" class="btn" name="csale" value="1000">1000 мм</button></li>
-							<li><button type="submit" class="btn" name="csale" value="1600">1600 мм</button></li>
-							<li><button type="submit" class="btn" name="csale" value="2000">2000 мм</button></li>
-							<li><button type="submit" class="btn" name="csale" value="2500">2500 мм</button></li>
-							<li><button type="submit" class="btn" name="csale" value="4000">4000 мм</button></li>
-						</ul>
-					</form>
-				</div>
-			</li>
-		</ul>
-
-
-	</body>
 </html>
+
+{% endblock %}

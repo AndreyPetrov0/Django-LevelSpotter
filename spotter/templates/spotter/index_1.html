@@ -1,35 +1,38 @@
-{% load static %}
+{% extends 'base.html' %}
 
-<!DOCTYPE HTML>
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Level Spoter</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Level Spotter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-wodth, initial-scale=1.0">
 	<link type="text/css" href="{% static 'spotter/css/style_1.css' %}" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-	<body>
+	<li class="open_index">
 
-		<ul class="base_form">
+		<div class="div_number">
+			<img class="ErW" src="../images/img-index_2.png">
+			<h1 class="title-container">Введіть коригувальні значення в мм.</h1>
 
-			<li>
-				{% include 'spotter/includes/base_1.html' %}
-			</li>
+			<form method="get" action="{% url 'index_2' %}" name="form_correct">
 
-			<li class="open_index">
-
-				<div class="div_number">
-					<h1>Введіть корегувальне значення в мм.</h1>
-
-					<form method="get" action="{% url 'index_2' %}" name="form_correct" >
+				<ul class="our-form">
+					<li>
 						<input type="text" class="display_number" name="correct_value" readonly="readonly" value="0" maxlength="3">
+					</li>
 
+					<li>
 						<ul class="cell_back-and-accept">
-							<li><button class="btn-back" form="click_back" type="submit">Назад</button></li>
+							<li><button class="btn-back" form="back_index" type="submit">Назад</button></li>
 							<li><button class="btn-accept" type="submit">Прийняти</button></li>
 						</ul>
-
-
+					</li>
+					<li>
 						<table class="table_number">
 							<tr>
 								<td><input type="button" class="btn_num" value="1" onclick="form_correct.correct_value.value+='1'"></td>
@@ -52,14 +55,16 @@
 								<td><input type="button" class="btn_num" value="<" onclick="form_correct.correct_value.value= form_correct.correct_value.value.slice(0,-1)"></td>
 							</tr>
 						</table>
-					</form>
+					</li>
+				</ul>
+			</form>
 
-					<form action="{% url 'home' %}" id="click_back">
-					</form>
-				</div>
+			<form action="{% url 'home' %}"></form>
 
-			</li>
-		</ul>
- 	</body>
+		</div>
+
+	</li>
 
 </html>
+
+{% endblock %}
