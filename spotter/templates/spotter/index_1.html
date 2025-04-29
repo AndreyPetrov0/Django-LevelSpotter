@@ -16,7 +16,7 @@
 	<li class="open_index">
 
 		<div class="div_number">
-			<img class="ErW" src="../images/img-index_2.png">
+			<img class="ErW" src="{% static 'spotter/images/img-index_2.png' %}">
 			<h1 class="title-container">Введіть коригувальні значення в мм.</h1>
 
 			<form method="get" action="{% url 'index_2' %}" name="form_correct">
@@ -28,7 +28,7 @@
 
 					<li>
 						<ul class="cell_back-and-accept">
-							<li><button class="btn-back" form="back_index" type="submit">Назад</button></li>
+							<li><button class="btn-back" form="click_back" type="submit">Назад</button></li>
 							<li><button class="btn-accept" type="submit">Прийняти</button></li>
 						</ul>
 					</li>
@@ -59,7 +59,7 @@
 				</ul>
 			</form>
 
-			<form action="{% url 'home' %}"></form>
+			<form action="{% url 'home' %}" id="click_back"></form>
 
 		</div>
 
