@@ -4,6 +4,16 @@ from django.shortcuts import render
 
 cache = {'csale': 0, 'correct_value': 0, 'number_value': 0}
 
+def func_calc(scale, correct, number):
+    mg = 65535
+    calc_correct = int(number) + (int(correct) * int(scale))
+    if calc_correct < 0:
+        return str(mg + calc_correct)
+    if calc_correct > mg:
+        return str(calc_correct - mg)
+    else:
+        return str(calc_correct)
+
 def index(request):
     if cache['csale'] != 0:
         cache['csale'] = 0
@@ -51,8 +61,7 @@ def  index_3(request):
         pass
 
     print(request.GET, 'index_3')
-    return render(request, 'spotter/index_3.html')
 
-def index_result(request):
-    # f = {"1": test_func()}
-    return render(request, 'spotter/index_result.html')
+    function = {'func_calc': func_calc(cache['csale'], cache['correct_value'], cache['number_value'])}
+    return render(request, 'spotter/index_3.html', context=function)
+

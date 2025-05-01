@@ -1,18 +1,47 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Level Spoter</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-</head>
-<body>
-  <h1>Результат розрахунку введыть у датчик</h1>
+{% extends 'base.html' %}
 
-    <form method="get">
-		<input type="text" value="0">
-		<button type="submit">Розрахувати</button>
-	</form>
-	<form action="{% url 'home' %}">
-		<button type="submit">До меню</button>
-	</form>
-</body>
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Level Spotter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-wodth, initial-scale=1.0">
+	<link type="text/css" href="{% static 'spotter/css/style_3.css' %}" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+	<li class="open_index">
+
+		<div class="div_number">
+
+			<h1 class="title-container">Результат розрахунку введіть у датчик</h1>
+
+			<img class="img-index" src="{% static 'spotter/images/img-index_3.png' %}">
+
+			<form id="click_result" name="form_result">
+				<input class="display_result" type="text" name="display_result" value="0">
+			</form>
+
+			<ul class="cell_back-and-accept">
+				<li>
+					<button type="button" class="btn-accept" form="click_result" onclick="form_result.display_result.value = {{ func_calc }}">Розрахувати</button>
+				</li>
+
+				<li>
+					<form action="{% url 'home' %}" id="click_back">
+						<button class="btn-back" form="click_back" type="submit">Назад</button>
+					</form>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</li>
+
 </html>
+
+{% endblock %}
