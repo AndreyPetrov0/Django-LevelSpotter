@@ -17,9 +17,14 @@
     padding-top: 20px;
 }
 
-.ErW {
+.div-img {
+    display: flex;
+    justify-content: center;
+}
+
+.img-index {
+    align-self: center;
     width: 120px;
-    margin-left: 28%;
 }
 
 
@@ -43,6 +48,8 @@
 
 .our-form li {
     padding: 2px;
+    display: flex;
+    justify-content: center;
 }
 
 .display_number {
@@ -53,7 +60,6 @@
     font-size: 30px;
     padding: 6px;
     margin: 10px;
-    margin-left: 18%;
 }
 
 .cell_back-and-accept {

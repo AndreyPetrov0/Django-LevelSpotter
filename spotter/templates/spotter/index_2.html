@@ -16,7 +16,11 @@
     <li class="open_index">
 
         <div class="div_number">
-            <img class="ErW" src="{% static 'spotter/images/img-index_2.png' %}">
+
+            <div class="div-img">
+                <img class="img-index" src="{% static 'spotter/images/img-index_2.png' %}">
+            </div>
+
             <h1 class="title-container">Введіть значення на дісплею датчика</h1>
 
             <form method="get" action="{% url 'index_3' %}" name="form_number">

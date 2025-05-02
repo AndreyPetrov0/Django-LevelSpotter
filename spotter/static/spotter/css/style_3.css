@@ -26,11 +26,20 @@
     padding: 6px;
 }
 
+.div-img {
+    display: flex;
+    justify-content: center;
+}
+
 .img-index {
     position: fixed;
     width: 200px;
-    margin-left: 15%;
     z-index: -1;
+}
+
+#click_result {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -44,6 +53,8 @@
     margin-left: 32%;
     margin-top: 90px;
     z-index: 2;
+
+    text-align: center;
 }
 
 .cell_back-and-accept {
