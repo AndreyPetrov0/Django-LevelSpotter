@@ -1,39 +1,74 @@
-<!DOCTYPE HTML>
-<html>
- <head>
-	<title>Level Spoter</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- </head>
+{% extends 'base.html' %}
 
- <body>
- 	<h1>Введіть значення на дісплею датчика</h1>
+{% block content %}
 
-    <form method="get" action="{% url 'index_3' %}" name="form_number">
-		<input type="text" name="number_value" readonly="">
-		<br><br>
-		<button type="submit">Прийняти</button>
-		<br><br>
-		<input type="button" value="1" onclick="form_number.number_value.value+='1'">
-		<input type="button" value="2" onclick="form_number.number_value.value+='2'">
-		<input type="button" value="3" onclick="form_number.number_value.value+='3'">
-		<br><br>
-		<input type="button" value="4" onclick="form_number.number_value.value+='4'">
-		<input type="button" value="5" onclick="form_number.number_value.value+='5'">
-		<input type="button" value="6" onclick="form_number.number_value.value+='6'">
-		<br><br>
-		<input type="button" value="7" onclick="form_number.number_value.value+='7'">
-		<input type="button" value="8" onclick="form_number.number_value.value+='8'">
-		<input type="button" value="9" onclick="form_number.number_value.value+='9'">
-		<br><br>
-		<input type="button" value="C" onclick="form_number.number_value.value= ''">
-		<input type="button" value="0" onclick="form_number.number_value.value+='0'">
-		<input type="button" value="<" onclick="form_number.number_value.value= form_number.number_value.value.slice(0,-1)">
-	</form>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Level Spotter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-wodth, initial-scale=1.0">
+	<link type="text/css" href="{% static 'spotter/css/style_2.css' %}" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
- 	<form action="{% url 'index_1' %}">
-		<button type="submit">Назад</button>
-	</form>
+    <li class="open_index">
 
- </body>
+        <div class="div_number">
+
+            <div class="div-img">
+                <img class="img-index" src="{% static 'spotter/images/img-index_2.png' %}">
+            </div>
+
+            <h1 class="title-container">Введіть значення на дісплею датчика</h1>
+
+            <form method="get" action="{% url 'index_3' %}" name="form_number">
+
+                <ul class="our-form">
+                    <li>
+                        <input type="text" class="display_number" name="number_value" readonly="readonly" placeholder="0" maxlength="3">
+                    </li>
+
+                    <li>
+                        <ul class="cell_back-and-accept">
+                            <li><button class="btn-back" form="click_back" type="submit">Назад</button></li>
+                            <li><button class="btn-accept" type="submit">Прийняти</button></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <table class="table_number">
+                            <tr>
+                                <td><input type="button" class="btn_num" value="1" onclick="form_number.number_value.value+='1'"></td>
+                                <td><input type="button" class="btn_num" value="2" onclick="form_number.number_value.value+='2'"></td>
+                                <td><input type="button" class="btn_num" value="3" onclick="form_number.number_value.value+='3'"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="btn_num" value="4" onclick="form_number.number_value.value+='4'"></td>
+                                <td><input type="button" class="btn_num" value="5" onclick="form_number.number_value.value+='5'"></td>
+                                <td><input type="button" class="btn_num" value="6" onclick="form_number.number_value.value+='6'"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="btn_num" value="7" onclick="form_number.number_value.value+='7'"></td>
+                                <td><input type="button" class="btn_num" value="8" onclick="form_number.number_value.value+='8'"></td>
+                                <td><input type="button" class="btn_num" value="9" onclick="form_number.number_value.value+='9'"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="btn_num" value="C" onclick="form_number.number_value.value= ''"></td>
+                                <td><input type="button" class="btn_num" value="0" onclick="form_number.number_value.value+='0'"></td>
+                                <td><input type="button" class="btn_num" value="<" onclick="form_number.number_value.value= form_number.number_value.value.slice(0,-1)"></td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </form>
+
+            <form action="{% url 'index_1' %}" id="click_back"></form>
+
+        </div>
+
+    </li>
 
 </html>
+
+{% endblock %}
