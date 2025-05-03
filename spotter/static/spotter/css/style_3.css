@@ -42,7 +42,6 @@
     justify-content: center;
 }
 
-
 .display_result {
     color: #00FF00;
     font-size: 37px;
@@ -50,10 +49,8 @@
     border-color: rgba(0, 0, 0, .1);
     width: 130px;
     height: 40px;
-    margin-left: 32%;
     margin-top: 90px;
     z-index: 2;
-
     text-align: center;
 }
 
