@@ -44,12 +44,12 @@
 
 .display_result {
     color: #00FF00;
-    font-size: 40px;
+    font-size: 42px;
     background: rgba(0, 0, 0, .1);
     border-color: rgba(0, 0, 0, .1);
     width: 130px;
     height: 40px;
-    margin-top: 90px;
+    margin-top: 85px;
     z-index: 2;
     text-align: center;
 }
