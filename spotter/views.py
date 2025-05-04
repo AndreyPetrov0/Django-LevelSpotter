@@ -1,18 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-# from func_calc import test_func
 
 cache = {'csale': 0, 'correct_value': 0, 'number_value': 0}
 
-def func_calc(scale, correct, number):
-    mg = 65535
-    calc_correct = int(number) + (int(correct) * int(scale))
-    if calc_correct < 0:
-        return str(mg + calc_correct)
-    if calc_correct > mg:
-        return str(calc_correct - mg)
-    else:
-        return str(calc_correct)
 
 def index(request):
     if cache['csale'] != 0:
@@ -51,6 +41,16 @@ def  index_2(request):
     return render(request, 'spotter/index_2.html')
 
 def  index_3(request):
+    def calculation_function(scale, correct, number):
+        mg = 65535
+        calc_correct = int(number) + (int(correct) * int(scale))
+        if calc_correct < 0:
+            return str(mg + calc_correct)
+        if calc_correct > mg:
+            return str(calc_correct - mg)
+        else:
+            return str(calc_correct)
+
     if cache['number_value'] == 0:
         if request.GET['number_value'] == '':
             cache['number_value'] = 0
@@ -62,6 +62,6 @@ def  index_3(request):
 
     print(request.GET, 'index_3')
 
-    function = {'func_calc': func_calc(cache['csale'], cache['correct_value'], cache['number_value'])}
+    function = {'func_calc': calculation_function(cache['csale'], cache['correct_value'], cache['number_value'])}
     return render(request, 'spotter/index_3.html', context=function)
 
