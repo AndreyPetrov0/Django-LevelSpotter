@@ -1,0 +1,136 @@
+.open_index {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.div_number {
+    background: transparent;
+    width: 310px;
+    height: 500px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin-top: 120px;
+    padding: 15px;
+    padding-top: 20px;
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+}
+
+.img-index {
+    align-self: center;
+    width: 64px;
+}
+
+
+.title-container {
+    font-family: "Times New Roman";
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    padding: 6px;
+}
+
+.our-form {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    align-items: center;
+    display: box-sizing;
+    justify-content: center;
+}
+
+.our-form li {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.display_number {
+    width: 180px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 30px;
+    padding: 6px;
+    margin: 10px;
+}
+
+.cell_back-and-accept {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.cell_back-and-accept li {
+    display: inline-block;
+    padding: 0.1px;
+}
+
+.btn-back {
+    background: #3E17ED;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border-radius: 20px 0px 0px 20px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    transform: translateX(-2px);
+    background-color: #0004CD;
+}
+
+.btn-accept {
+    background: #3E17ED;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-accept:hover {
+    transform: translateX(2px);
+    background-color: #0004CD;
+}
+
+.table_number {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.table_number td {
+    padding: 5px;
+}
+
+.btn_num {
+    background: #7700E8;
+    width: 70px;
+    height: 40px;
+    outline: none;
+    border-radius: 9px 9px 9px 9px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_num:hover {
+    background-color: #1CEDDF;
+    color: black;
+}
