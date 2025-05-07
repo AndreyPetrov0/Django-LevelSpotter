@@ -14,7 +14,7 @@
 		<!-- БАЗОВАЯ ФОРМА -->
 		<div class="container">
 			<nav>
-				<img src="{% static 'spotter/images/logo.png' %}" class="logo-icon">
+				<img src="{% static '../images/logo.png' %}" class="logo-icon">
 				<label class="logo">Level Spotter</label>
 
 				<input type="checkbox" id="check">
@@ -24,10 +24,10 @@
 				</label>
 
 				<ul class="navbar">
-			        <li><a class="active" href="#">Корегування</a></li>
+			        <li><a class="active" href="{% url 'home' %}">Корегування</a></li>
 			        <li><a href="#">Розміщення</a></li>
 			        <li><a href="#">Інструкція</a></li>
-			        <li><a href="#">Завантажити</a></li>
+			        <li><a href="{% url 'download' %}">Завантажити</a></li>
 				</ul>
 			</nav>
 		<!-- БАЗОВАЯ ФОРМА + DIV в конце -->
