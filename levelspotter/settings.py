@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'spotter.apps.SpotterConfig',
+    'download_app.apps.DownloadAppConfig',
     'levelspotter',
 ]
 
