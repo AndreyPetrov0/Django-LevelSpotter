@@ -126,8 +126,6 @@ a:hover {
         font-weight: 700;
         
         width: 100%;
-        display: flex;
-        justify-content: space-between;
     }
 
     .icons {
