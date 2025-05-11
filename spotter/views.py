@@ -1,8 +1,6 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 cache = {'csale': 0, 'correct_value': 0, 'number_value': 0}
-
 
 def index(request):
     if cache['csale'] != 0:
