@@ -24,6 +24,9 @@ from start_page.views import page_start
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', page_start, name='start_page'),
