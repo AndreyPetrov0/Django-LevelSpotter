@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-wodth, initial-scale=1.0">
 	<link type="text/css" href="{% static 'spotter/css/style_base.css' %}" rel="stylesheet">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script defer src="{% static 'spotter/js/activePage.js' %}"></script>
 </head>
 
 	<body>
@@ -24,10 +25,10 @@
 				</label>
 
 				<ul class="navbar">
-			        <li><a class="active" href="{% url 'home' %}">Корегування</a></li>
-			        <li><a href="#">Розміщення</a></li>
-			        <li><a href="#">Інструкція</a></li>
-			        <li><a href="{% url 'download' %}">Завантажити</a></li>
+			        <li><a class="home1" href="{% url 'home' %}">Корегування</a></li>
+			        <li><a class="home2" href="#">Розміщення</a></li>
+			        <li><a class="home3" href="#">Інструкція</a></li>
+			        <li><a class="home4" href="{% url 'download' %}">Завантажити</a></li>
 				</ul>
 			</nav>
 		<!-- БАЗОВАЯ ФОРМА + DIV в конце -->

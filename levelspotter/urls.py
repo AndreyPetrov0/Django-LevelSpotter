@@ -17,13 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from spotter.views import index
-from download_app.views import index
+from download_app.views import page_download_app
+from start_page.views import page_start
+
 
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("spotter.urls"), name='spotter'),
-    path('/download', index, name='download'),
+    path('', page_start, name='start_page'),
+    path('/spotter', include("spotter.urls"), name='spotter'),
+    path('/download', page_download_app, name='download'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
