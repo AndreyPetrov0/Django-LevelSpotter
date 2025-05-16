@@ -1,7 +1,6 @@
 /* Google Fonts Link */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ---------- БАЗОВАЯ ПАНЕЛЬ ----------------*/
 
 * {
     padding: 0;
@@ -22,14 +21,6 @@ body {
     background-size: cover;
     background-position: center;
 }
-
-
-
-
-
-
-
-/* ------------------------------------ */
 
 .logo-line {
     list-style: none;
@@ -127,7 +118,7 @@ body {
     padding: 10px;
 }
 
-.btn {
+.btn-sections {
     width: 320px;
     height: 70px;
     background: yellow;
@@ -138,7 +129,7 @@ body {
     background: linear-gradient(-45deg, transparent 30px, yellow 15px);
 }
 
-.btn::before {
+.btn-sections::before {
     content: '';
     position: absolute;
     background-color: inherit;
@@ -150,7 +141,7 @@ body {
     z-index: -2;
 }
 
-.btn::after {
+.btn-sections::after {
     content: '';
     position: absolute;
     background-color: inherit;
@@ -215,9 +206,15 @@ body {
 
 .name-section {
     font-size: 25px;
-    padding-left: 10%;
+    padding-left: 9%;
     font-weight: 600;
     background: none;
+    height: 65px;
+    width: 500px;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .name-section:hover {
@@ -230,6 +227,7 @@ body {
 /* BREAKPOINTS */
 
 @media (max-width: 780px) {
+
 
     .sections {
         padding-top: 40%;
@@ -260,4 +258,5 @@ body {
         font-weight: 600;
         color: #FFA738FF;
     }
+
 }
