@@ -231,12 +231,11 @@ body {
 
 @media (max-width: 780px) {
 
-
     .sections {
         padding-top: 40%;
     }
 
-   .text-box {
+    .text-box {
         position: absolute;
         margin-top: 1px;
         width: 90%;
@@ -261,5 +260,4 @@ body {
         font-weight: 600;
         color: #FFA738FF;
     }
-
 }
