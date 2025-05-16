@@ -15,7 +15,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.container {
+.start_container {
     width: 100%;
     min-height: 100vh;
     background-image: url(../images/background.jpg);
@@ -56,7 +56,7 @@ body {
 }
 
 
-.open_index {
+.start_index {
     padding-top: 5%;
 }
 
