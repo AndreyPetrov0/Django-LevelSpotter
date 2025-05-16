@@ -1,20 +1,59 @@
-{% extends 'base.html' %}
-
-{% block content %}
-
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Level Spotter</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-wodth, initial-scale=1.0">
-<!--	<link type="text/css" href="{% static 'spotter/css/style.css' %}" rel="stylesheet">-->
-<!--	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>-->
+	<link rel="stylesheet" type="text/css" href="{% static 'start_page/css/style_start.css' %}">
+	
 </head>
+	<body>
 
-<p style="padding: 20% 30%; font-size: 30px; color: green">START PAGE</p>
+		<div class="container">
+			<ul class="logo-line">
+				<li><img class="logo-icon" src="{% static 'start_page/images/logo.png' %}" ></li>
+				<li><h1 class="logo">Level Spotter</h1></li>
+			</ul>	
 
+			<div class="open_index">
+
+				<section class="Home">
+					<div class="text-box">
+						<h1>Корегування приладів</h1>
+						<h1>виміру рівня рідини</h1>
+						<p>Використовується датчики Сафір-М 7xxx-серії виробництва Манометр-Харків</p>
+					</div>
+				</section>
+
+				<ul class="sections">
+					<li class="btn-slides-back">
+						<div class="btn animation-button animation-delay-0s">
+							<a class="name-section" href="{% url 'home' %}">КОРЕГУВАННЯ</a>
+						</div>
+					</li>
+
+					<li class="btn-slides-back">
+						<div class="btn animation-button animation-delay-05s">
+							<a class="name-section">РОЗМІЩЕННЯ</a>
+						</div>
+					</li>
+
+					<li class="btn-slides-back">
+						<div class="btn animation-button animation-delay-1s">
+							<a class="name-section">ІНСТРУКЦІЯ</a>
+						</div>
+					</li>
+
+					<li class="btn-slides-back">
+						<div class="btn animation-button animation-delay-15s">
+							<a class="name-section" href="{% url 'download' %}">ЗАВАНТАЖИТИ</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div> 
+	</body>
 </html>
-
-{% endblock %}

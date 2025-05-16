@@ -1,0 +1,265 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ---------- БАЗОВАЯ ПАНЕЛЬ ----------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+/* ------------------------------------ */
+
+.logo-line {
+    list-style: none;
+    margin-left: 5%;
+    padding: 5px;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    animation: to-top 1s ease forwards 0s;
+}
+
+@keyframes to-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.open_index {
+    padding-top: 5%;
+}
+
+
+.text-box {
+    position: absolute;
+    margin-top: 5%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: end;
+
+    animation: to-left 1s ease forwards 0s;
+}
+
+.text-box h1 {
+    color: blue;
+    font-size: 50px;
+}
+
+.text-box p {
+    margin: 20px 0;
+    font-size: 30px;
+    width: 50%;
+    color: yellow;
+}
+
+
+@keyframes to-left {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.logo-line li {
+    display: inline-block;
+    padding: 7px;
+}
+
+.logo-icon {
+    width: 50px;
+    margin-right: 10%;
+}
+
+.logo {
+    color: #0F33FF;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.sections {
+    width: 500px;
+    list-style: none;
+    display: block;
+    margin: -20px;
+}
+
+.sections li {
+    padding: 10px;
+}
+
+.btn {
+    width: 320px;
+    height: 70px;
+    background: yellow;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(-45deg, transparent 30px, yellow 15px);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    background: linear-gradient(-45deg, transparent 30px, black 15px);
+    left: 4px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    z-index: -2;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    background: linear-gradient(-45deg, transparent 30px, yellow 15px);
+    left: 8px;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+    z-index: -1;
+}
+
+.btn-slides-back {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.btn-slides-back:hover {
+    transform: translateX(-50px);
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-320px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.animation-button {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+    transform: translateX(-500px);
+}
+
+.animation-delay-0s {
+    animation-delay: 0s;
+}
+
+.animation-delay-05s {
+    animation-delay: .5s;
+}
+
+.animation-delay-1s {
+    animation-delay: 1s;
+}
+
+.animation-delay-15s {
+    animation-delay: 1.5s;
+}
+
+
+.name-section {
+    font-size: 25px;
+    padding-left: 10%;
+    font-weight: 600;
+    background: none;
+}
+
+.name-section:hover {
+    background: none;
+}
+
+
+
+
+/* BREAKPOINTS */
+
+@media (max-width: 780px) {
+
+
+    .sections {
+        padding-top: 40%;
+    }
+
+   .text-box {
+        position: absolute;
+        margin-top: 1px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        text-align: end;
+
+        animation: to-left 1s ease forwards 0s;
+    }
+
+    .text-box h1 {
+        padding: 1px;
+        font-size: 30px;
+    }
+
+    .text-box p {
+        margin: 20px 0;
+        font-size: 20px;
+        width: 99%;
+        font-weight: 600;
+        color: #FFA738FF;
+    }
+
+}
