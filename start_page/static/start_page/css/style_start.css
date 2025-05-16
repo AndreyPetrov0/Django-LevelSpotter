@@ -31,19 +31,6 @@ body {
     display: flex;
     justify-content: center;
 
-    animation: to-top 1s ease forwards 0s;
-}
-
-@keyframes to-top {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 
@@ -62,7 +49,6 @@ body {
     align-items: end;
     text-align: end;
 
-    animation: to-left 1s ease forwards 0s;
 }
 
 .text-box h1 {
@@ -78,17 +64,6 @@ body {
 }
 
 
-@keyframes to-left {
-    0% {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 
 .logo-line li {
@@ -153,55 +128,12 @@ body {
     z-index: -1;
 }
 
-.btn-slides-back {
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-
-.btn-slides-back:hover {
-    transform: translateX(-50px);
-}
 
 
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-320px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
 
 
-.animation-button {
-    animation-name: slideInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
 
-    transform: translateX(-500px);
-}
 
-.animation-delay-0s {
-    animation-delay: 0s;
-}
-
-.animation-delay-05s {
-    animation-delay: .5s;
-}
-
-.animation-delay-1s {
-    animation-delay: 1s;
-}
-
-.animation-delay-15s {
-    animation-delay: 1.5s;
-}
 
 
 .name-section {
