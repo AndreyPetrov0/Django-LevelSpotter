@@ -260,11 +260,11 @@ body {
     }
 
     .sections {
-        margin-top: 20%;
+        margin-top: 2%;
         width: 100px;
         list-style: none;
         display: block;
-        margin: -20px;
+        margin-left: -20px;
     }
 
 }
