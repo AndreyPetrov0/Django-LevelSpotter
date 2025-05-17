@@ -24,7 +24,6 @@ body {
 
 .logo-line {
     list-style: none;
-    margin-left: 5%;
     padding: 5px;
 
     align-items: center;
@@ -235,17 +234,13 @@ body {
 
     .start_container {
         width: 100%;
-        min-height: 80vh;
-    }
-
-    .sections {
-        padding-top: 37%;
+        min-height: 100vh;
     }
 
     .text-box {
         position: absolute;
         margin: 1px;
-        width: 90%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -257,20 +252,21 @@ body {
 
     .text-box h1 {
         width: 100%;
-        padding-right: 10px;
+        padding-right: 1%;
         font-size: 30px;
     }
 
     .text-box p {
-        padding-right: 10px;
-        margin: 20px 0;
+        padding-right: 1%;
+        margin: 5px 0;
         font-size: 20px;
-        width: 80%;
+        width: 99%;
         font-weight: 600;
     }
 
     .sections {
-        margin-top: 20%;
+        padding-top: 40%;
+/*        margin-top: 20%;*/
         width: 100px;
         list-style: none;
         display: block;
