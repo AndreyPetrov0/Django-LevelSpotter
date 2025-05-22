@@ -59,7 +59,7 @@ body {
     align-items: end;
     text-align: end;
 
-    /* animation: to-left 1s ease forwards 0s; */
+    animation: to-left 1s ease forwards 0s; 
 }
 
 .text-box h1 {
@@ -236,7 +236,6 @@ body {
 
     .text-box {
         background: green;
-        animation: none;
     }
 
     .start_container {
