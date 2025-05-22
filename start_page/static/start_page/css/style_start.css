@@ -232,6 +232,16 @@ body {
 
 @media (max-width: 780px) {
 
+    .logo-line {
+        background: red;
+        animation: none;
+    }
+
+    .text-box {
+        background: green;
+        animation: none;
+    }
+
     .start_container {
         width: 100%;
         min-height: 100vh;
@@ -270,15 +280,5 @@ body {
         display: block;
         margin-left: -20px;
     }
-
-    .logo-line {
-        background: red;
-        animation: none;
-    }
-
-    .text-box {
-        background: green;
-        animation: none;
-    }
-
+    
 }
