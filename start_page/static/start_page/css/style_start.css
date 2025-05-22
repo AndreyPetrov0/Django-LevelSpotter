@@ -256,8 +256,6 @@ body {
         justify-content: center;
         align-items: end;
         text-align: end;
-
-        animation: to-left 1s ease forwards 0s;
     }
 
     .text-box h1 {
