@@ -22,7 +22,7 @@ body {
     background-position: center;
 }
 
-.logo-line {
+/* .logo-line {
     list-style: none;
     padding: 5px;
 
@@ -31,7 +31,7 @@ body {
     justify-content: center;
 
     /* animation: to-top 1s ease forwards 0s; */
-}
+} */
 
 /* @keyframes to-top {
     0% {
