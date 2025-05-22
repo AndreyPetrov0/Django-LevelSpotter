@@ -22,18 +22,16 @@ body {
     background-position: center;
 }
 
-/* .logo-line {
-    list-style: none;
+.logo-line {
     padding: 5px;
-
     align-items: center;
     display: flex;
     justify-content: center;
 
-    /* animation: to-top 1s ease forwards 0s; */
-} */
+    animation: to-top 1s ease forwards 0s;
+}
 
-/* @keyframes to-top {
+@keyframes to-top {
     0% {
         opacity: 0;
         transform: translateY(-50px);
@@ -43,7 +41,7 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-} */
+}
 
 
 .start_index {
