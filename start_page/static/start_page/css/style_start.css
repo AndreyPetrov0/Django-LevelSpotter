@@ -271,4 +271,14 @@ body {
         margin-left: -20px;
     }
 
+    .logo-line {
+        background: red;
+        animation: none;
+    }
+
+    .text-box {
+        background: green;
+        animation: none;
+    }
+
 }
