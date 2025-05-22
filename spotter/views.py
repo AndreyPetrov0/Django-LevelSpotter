@@ -25,7 +25,7 @@ def  index_1(request):
 
 def  index_2(request):
     if cache['correct_value'] == 0:
-        if request.GET['correct_value'] == '':
+        if request.GET['correct_value'] == '' or request.GET['correct_value'] == '-':
             cache['correct_value'] = 0
         else:
             cache['correct_value'] = int(request.GET['correct_value'])

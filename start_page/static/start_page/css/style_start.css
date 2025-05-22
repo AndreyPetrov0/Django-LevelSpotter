@@ -271,12 +271,14 @@ body {
         margin-left: -20px;
     }
 
-    .sections {
-        margin-top: 20%;
-        width: 100px;
-        list-style: none;
-        display: block;
-        margin-left: -20px;
+    .logo-line {
+        background: red;
+        animation: none;
     }
 
+    .text-box {
+        background: green;
+        animation: none;
+    }
+  
 }
