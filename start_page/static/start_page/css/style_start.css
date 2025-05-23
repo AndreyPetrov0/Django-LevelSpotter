@@ -287,4 +287,12 @@ body {
         cursor: auto;
     }
 
+    .btn-sections::before {
+        cursor: auto;
+    }
+
+    .btn-sections::after {
+        cursor: auto;
+    }
+
 }
