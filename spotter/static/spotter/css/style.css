@@ -41,6 +41,7 @@
     outline: none;
     border-radius: 15px 2px 15px 2px;
     font-size: 25px;
+    cursor: pointer;
 
     transition-property: transform;
     transition-duration: 0.3s;

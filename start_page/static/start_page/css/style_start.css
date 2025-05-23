@@ -244,8 +244,8 @@ body {
         justify-content: center;
         align-items: end;
         text-align: end;
+        animation: to-left 1.5s ease forwards 0s;
 
-        animation: to-left 1.5s ease forwards 0s; 
     }
 
     @keyframes to-left {
@@ -253,7 +253,7 @@ body {
             opacity: 0;
             transform: translateX(15px);
         }
-    
+
         100% {
             opacity: 1;
             transform: translateX(0);
@@ -280,5 +280,5 @@ body {
         display: block;
         margin-left: -20px;
     }
-    
+
 }
