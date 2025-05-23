@@ -239,20 +239,32 @@ body {
 
     .text-box {
         position: absolute;
-        margin: 1px;
-        width: 98%;
+        width: 95%;
+        margin-top: 1%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: end;
         text-align: end;
 
-        animation: to-left 1s ease forwards 0s;
+        animation: to-left 1.5s ease forwards 0s;
+    }
+
+    @keyframes to-left {
+        0% {
+            opacity: 0;
+            transform: translateX(15px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     .text-box h1 {
         width: 100%;
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .text-box p {
@@ -264,21 +276,11 @@ body {
     }
 
     .sections {
-        padding-top: 40%;
+        padding-top: 55%;
         width: 100px;
         list-style: none;
         display: block;
         margin-left: -20px;
-    }
-
-    .logo-line {
-        background: red;
-        animation: none;
-    }
-
-    .text-box {
-        background: green;
-        animation: none;
     }
 
 }
