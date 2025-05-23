@@ -134,3 +134,17 @@
     background-color: #1CEDDF;
     color: black;
 }
+
+@media (max-width: 780px) {
+    .btn_num {
+        cursor: auto;
+    }
+
+    .btn-accept {
+        cursor: auto;
+    }
+
+    .btn-back {
+        cursor: auto;
+    }
+}
