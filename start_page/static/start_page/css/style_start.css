@@ -245,13 +245,13 @@ body {
         align-items: end;
         text-align: end;
 
-        animation: to-left 1s ease forwards 0s; 
+        animation: to-left 1.5s ease forwards 0s; 
     }
 
     @keyframes to-left {
         0% {
             opacity: 0;
-            transform: translateX(20px);
+            transform: translateX(15px);
         }
     
         100% {
