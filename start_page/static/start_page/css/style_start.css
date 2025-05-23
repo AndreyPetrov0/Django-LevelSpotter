@@ -287,11 +287,7 @@ body {
         cursor: auto;
     }
 
-    .btn-sections::before {
-        cursor: auto;
-    }
-
-    .btn-sections::after {
+    .name-section {
         cursor: auto;
     }
 
