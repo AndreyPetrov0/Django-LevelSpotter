@@ -101,3 +101,13 @@
     background: #70F670;
     box-shadow: 3px 0 12px 3px #00F600C1;
 }
+
+@media (max-width: 780px) {
+    .btn-accept {
+        cursor: auto;
+    }
+
+    .btn-back {
+        cursor: auto;
+    }
+}
