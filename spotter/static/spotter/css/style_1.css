@@ -147,4 +147,8 @@
     .btn-back {
         cursor: auto;
     }
+    
+    .btn_num:active {
+        background-color: red;
+    }
 }
