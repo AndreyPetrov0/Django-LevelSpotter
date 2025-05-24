@@ -131,12 +131,8 @@
 }
 
 .btn_num:hover {
-    background-color: #1CEDDF;
+    background-color: #1CEDDF 1s;
     color: black;
-}
-
-.btn_num:after {
-    background: red;
 }
 
 @media (max-width: 780px) {
