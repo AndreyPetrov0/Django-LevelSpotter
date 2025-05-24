@@ -130,6 +130,11 @@
     cursor: pointer;
 }
 
+.btn_num:hover {
+    background-color: #1CEDDF;
+    color: black;
+}
+
 @media (max-width: 780px) {
     .btn_num {
         cursor: auto;
