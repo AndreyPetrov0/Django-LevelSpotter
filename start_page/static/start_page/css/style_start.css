@@ -23,9 +23,7 @@ body {
 }
 
 .logo-line {
-    list-style: none;
     padding: 5px;
-
     align-items: center;
     display: flex;
     justify-content: center;
@@ -61,7 +59,7 @@ body {
     align-items: end;
     text-align: end;
 
-    animation: to-left 1s ease forwards 0s;
+    animation: to-left 1s ease forwards 0s; 
 }
 
 .text-box h1 {
@@ -231,7 +229,7 @@ body {
 /* BREAKPOINTS */
 
 @media (max-width: 780px) {
-
+    
     .start_container {
         width: 100%;
         min-height: 100vh;
@@ -246,8 +244,8 @@ body {
         justify-content: center;
         align-items: end;
         text-align: end;
-
         animation: to-left 1.5s ease forwards 0s;
+
     }
 
     @keyframes to-left {
@@ -291,5 +289,5 @@ body {
         cursor: auto;
         -webkit-tap-highlight-color: transparent;
     }
-
+    
 }
