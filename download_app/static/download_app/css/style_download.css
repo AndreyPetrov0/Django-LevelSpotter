@@ -22,8 +22,7 @@
 
 .download-button {
     color: black;
-    font-size: 17px;
-    padding: 7px 13px;
+    padding: 5px 13px;
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: 600;
@@ -43,4 +42,22 @@
 
 .android-logo {
     font-size: 50px;
+}
+
+.download-logo {
+    font-size: 50px;
+}
+
+.text-btn {
+    font-size: 17px;
+}
+
+.size-app {
+    font-size: 10px;
+}
+
+@media (max-width: 780px) {
+    .download-button {
+        cursor: auto;
+    }
 }
