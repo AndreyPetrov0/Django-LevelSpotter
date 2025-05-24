@@ -130,11 +130,6 @@
     cursor: pointer;
 }
 
-.btn_num:hover {
-    background-color: #1CEDDF;
-    color: black;
-}
-
 @media (max-width: 780px) {
     .btn_num {
         cursor: auto;
@@ -147,12 +142,12 @@
     .btn-back {
         cursor: auto;
     }
-    
+
     .btn_num:hover {
-    background-color: #7700E8;
-    color: white;
+        background-color: #7700E8;
+        color: white;
     }
-    
+
     .btn_num:active {
         background-color: #1CEDDF;
         color: black;
