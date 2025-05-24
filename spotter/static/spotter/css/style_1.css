@@ -148,7 +148,13 @@
         cursor: auto;
     }
     
+    .btn_num:hover {
+    background-color: #7700E8;
+    color: white;
+    }
+    
     .btn_num:active {
-        background-color: red;
+        background-color: #1CEDDF;
+        color: black;
     }
 }
