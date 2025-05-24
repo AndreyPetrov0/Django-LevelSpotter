@@ -289,8 +289,8 @@ body {
         cursor: auto;
     }
     
-    .name-section:visited {
-        background: red;
+    .name-section:active {
+        background: #FFFF5900;
     }
 
 }
