@@ -290,8 +290,4 @@ body {
         -webkit-tap-highlight-color: transparent;
     }
     
-    .name-section:active {
-        background: #FFFF5900;
-    }
-
 }
