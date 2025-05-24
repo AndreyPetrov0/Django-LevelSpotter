@@ -135,6 +135,10 @@
     color: black;
 }
 
+.btn_num:after {
+    background: red;
+}
+
 @media (max-width: 780px) {
     .btn_num {
         cursor: auto;
