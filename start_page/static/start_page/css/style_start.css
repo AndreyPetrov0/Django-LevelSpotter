@@ -288,5 +288,9 @@ body {
     .name-section {
         cursor: auto;
     }
+    
+    .name-section:active {
+        background: red;
+    }
 
 }
