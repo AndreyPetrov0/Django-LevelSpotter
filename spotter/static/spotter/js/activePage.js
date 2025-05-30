@@ -8,6 +8,10 @@ if (pageName === '%2Fspotter'){
 	document.querySelector(".home1").classList.add("active")
 }
 
+if (pageName === '%2Finstructions'){
+	document.querySelector(".home3").classList.add("active")
+}
+
 if (pageName === '%2Fdownload'){
 	document.querySelector(".home4").classList.add("active")
 }

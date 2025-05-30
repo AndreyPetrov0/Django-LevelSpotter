@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'spotter.apps.SpotterConfig',
     'download_app.apps.DownloadAppConfig',
+    'instructions.apps.InstructionsConfig',
     'start_page.apps.StartPageConfig',
     'levelspotter',
 ]
