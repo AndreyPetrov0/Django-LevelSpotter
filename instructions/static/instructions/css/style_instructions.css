@@ -1,6 +1,27 @@
-.hello {
-    color: green;
-    font-size: 50px;
-    margin-top: 40%;
-    margin-left: 40%;
+.open_index {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.div_csale {
+    background: transparent;
+    width: 310px;
+    height: 500px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin-top: 120px;
+    padding: 15px;
+    padding-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    controls;
+    width="240";
+    height="135";
 }
