@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def instructions(request):
+    return render(request, 'instructions/instructions.html')

@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from spotter.views import index
 from download_app.views import page_download_app
+from instructions.views import instructions
 from start_page.views import page_start
 
 
@@ -29,4 +30,5 @@ urlpatterns = [
     path('', page_start, name='start_page'),
     path('/spotter', include("spotter.urls"), name='spotter'),
     path('/download', page_download_app, name='download'),
+    path('/instructions', instructions, name='instructions'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
