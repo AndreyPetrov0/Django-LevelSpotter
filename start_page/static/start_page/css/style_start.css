@@ -75,6 +75,11 @@ body {
     color: #C4CA1FFF;
 }
 
+.link-to-page {
+    color: #C4CA1FFF;
+    text-decoration: underline;
+}
+
 
 @keyframes to-left {
     0% {
