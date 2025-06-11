@@ -5,7 +5,7 @@ const b = pathName.split('/')[1]
 const pageName = b
 
 if (pageName === '%2Fspotter'){
-	document.querySelector(".home1").classList.add("active")
+	document.querySelector(".home2").classList.add("active")
 }
 
 if (pageName === '%2Finstructions'){
