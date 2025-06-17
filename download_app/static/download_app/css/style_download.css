@@ -36,16 +36,43 @@
 }
 
 .download-button:hover {
-    background-color: #FFFF62D0;
-    color: darkblue;
+    background-color: yellow;
+    color: yellow;
 }
 
-.android-logo {
-    font-size: 50px;
+.download-button:focus {
+    background-color: #6DFF05FF;
+    color: #6DFF05FF;
+}
+
+.download-button:focus .download-logo{
+    padding-left: 110px;
 }
 
 .download-logo {
     font-size: 50px;
+    height: 63px;
+    width: 272px;
+    padding: 8px;
+    padding-left: 215px;
+    position: fixed;
+    color: black;
+}
+
+.download-logo:hover {
+    animation: download-hover 1s ease forwards 0s;
+}
+
+
+@keyframes download-hover {
+    100% {
+        padding-left: 110px;
+    }
+}
+
+.android-logo {
+    font-size: 50px;
+    padding-right: 39px;
 }
 
 .text-btn {
