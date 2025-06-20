@@ -14,13 +14,13 @@
     border-radius: 10px;
     margin-top: 120px;
     padding: 15px;
-    padding-top: 20px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    padding-top: 160px;
 }
 
-.download-button {
+.button{
+    position: relative;
+    overflow: hidden;
+
     color: black;
     padding: 5px 13px;
     border-radius: 8px;
@@ -33,26 +33,92 @@
     cursor: pointer;
     transition: 0.1s;
     border: 2px solid black;
+    margin-block: 20px;
 }
 
-.download-button:hover {
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: #6DFF05FF;
+    border-radius: 6px;
+}
+
+.button.progress::before{
+    animation: progress 4s ease-in-out forwards;
+}
+
+@keyframes progress {
+    0%{
+    left: -100%;
+    }
+    10%{
+    left: -97%;
+    }
+    20%{
+    left: -92%;
+    }
+    30%{
+    left: -82%;
+    }
+    30%{
+    left: -62%;
+    }
+    40%{
+    left: -38%;
+    }
+    50%{
+    left: -18%;
+    }
+    60%{
+    left: -14%;
+    }
+    80%{
+    left: -7%;
+    }
+    90%{
+    left: -3%;
+    }
+    100%{
+    left: 0%;
+    }
+}
+
+.link {
+    color: black;
+    transition: 0.1s;
+    display: inline-flex;
+}
+
+.link:hover {
     background-color: yellow;
     color: yellow;
 }
 
-.download-button:focus {
-    background-color: #6DFF05FF;
-    color: #6DFF05FF;
+.link:focus {
+    background-color: yellow;
+    color: yellow;
 }
 
-.download-button:focus .download-logo{
-    padding-left: 110px;
+.link:focus .download-logo {
+    animation: download-l 3s ease forwards 0s ;
+}
+
+@keyframes download-l {
+    0% {
+        padding-left: 8px;
+    }
 }
 
 .download-logo {
+    margin-top: -5px;
+    margin-left: -13px;
     font-size: 50px;
     height: 63px;
-    width: 272px;
+    width: 273px;
     padding: 8px;
     padding-left: 215px;
     position: fixed;
@@ -60,19 +126,28 @@
 }
 
 .download-logo:hover {
-    animation: download-hover 1s ease forwards 0s;
+    animation: download-hover 1.5s ease forwards 0s;
 }
-
 
 @keyframes download-hover {
     100% {
-        padding-left: 110px;
+        padding-left: 8px;
     }
 }
 
+.bxs-file-pdf {
+    padding-top: 5px;
+    padding-right: 90px;
+    font-size: 43px;
+    height: 50px;
+    width: 40px;
+}
+
 .android-logo {
+    padding-right: 93px;
     font-size: 50px;
-    padding-right: 39px;
+    height: 50px;
+    width: 50px;
 }
 
 .text-btn {
