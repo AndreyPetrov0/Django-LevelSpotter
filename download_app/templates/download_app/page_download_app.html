@@ -15,7 +15,7 @@
     <li class="open_index">
             <div class=div_csale>
 
-                <div class="button ">
+                <div class="button">
                     <a class="link" href="{% static 'download_app/app/Level_Spotter.apk' %}" download="Level_Spotter.apk">
                         <ul>
                             <li><p class="text-btn">Завантажити додаток</p></li>
@@ -27,7 +27,7 @@
                     </a>
                 </div>
 
-                <div class="button ">
+                <div class="button-pdf">
                     <a class="link" href="{% static 'download_app/brief_instruct/brief_instructions.pdf' %}" download="brief_instructions.pdf">
                         <ul>
                             <li><p class="text-btn">Завантажити інструкцію</p></li>
@@ -42,6 +42,19 @@
 
                 <script>
                     const button = document.querySelector(".button");
+
+                    button.addEventListener("click", ()=>{
+                    button.classList.add("progress");
+
+                    setTimeout(()=>{
+                    button.classList.remove("progress"); //remove progress after 6s
+                    },6000); //1000ms = 1s (6000 = 6s)
+
+                    });
+                </script>
+
+                <script>
+                    const button = document.querySelector(".button-pdf");
 
                     button.addEventListener("click", ()=>{
                     button.classList.add("progress");

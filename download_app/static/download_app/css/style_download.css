@@ -17,7 +17,7 @@
     padding-top: 160px;
 }
 
-.button{
+.button {
     position: relative;
     overflow: hidden;
 
@@ -36,7 +36,7 @@
     margin-block: 20px;
 }
 
-.button::before{
+.button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -47,7 +47,41 @@
     border-radius: 6px;
 }
 
-.button.progress::before{
+.button.progress::before {
+    animation: progress 4s ease-in-out forwards;
+}
+
+.button-pdf {
+    position: relative;
+    overflow: hidden;
+
+    color: black;
+    padding: 5px 13px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: yellow;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s;
+    border: 2px solid black;
+    margin-block: 20px;
+}
+
+.button-pdf::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: #6DFF05FF;
+    border-radius: 6px;
+}
+
+.button-pdf.progress::before{
     animation: progress 4s ease-in-out forwards;
 }
 
@@ -159,7 +193,7 @@
 }
 
 @media (max-width: 780px) {
-    .download-button {
+    .button {
         cursor: auto;
     }
 }
