@@ -15,54 +15,59 @@
     <li class="open_index">
             <div class=div_csale>
 
-                <div class="button">
+                <div class="button-app">
                     <a class="link" href="{% static 'download_app/app/Level_Spotter.apk' %}" download="Level_Spotter.apk">
                         <ul>
                             <li><p class="text-btn">Завантажити додаток</p></li>
-
                             <li><p class="size-app">розмір: 30,37 МБ</p></li>
                         </ul>
+                        <span class="text"></span>
                         <i class='bx bxl-android android-logo'></i>
                         <i class='bx bxs-download download-logo'></i>
                     </a>
+
                 </div>
 
                 <div class="button-pdf">
                     <a class="link" href="{% static 'download_app/brief_instruct/brief_instructions.pdf' %}" download="brief_instructions.pdf">
                         <ul>
                             <li><p class="text-btn">Завантажити інструкцію</p></li>
-
                             <li><p class="size-app">розмір: 76 КБ</p></li>
                         </ul>
+                        <span class="text-pdf"></span>
                         <i class='bx bxs-file-pdf'></i>
                         <i class='bx bxs-download download-logo'></i>
                     </a>
                 </div>
 
-
                 <script>
-                    const button = document.querySelector(".button");
+                    const button_app = document.querySelector(".button-app"),
+                    text_app = document.querySelector(".text");
 
-                    button.addEventListener("click", ()=>{
-                    button.classList.add("progress");
+                    button_app.addEventListener("click", ()=>{
+                        button_app.classList.add("progress-app");
+                        text_app.innerText = "Завантаження...";
 
-                    setTimeout(()=>{
-                    button.classList.remove("progress"); //remove progress after 6s
-                    },6000); //1000ms = 1s (6000 = 6s)
-
+                        setTimeout(()=>{
+                            button_app.classList.remove("progress"); //remove progress after 6s
+                            text_app.innerText = "ЗАВАНТАЖЕННО";
+                        },4000); //1000ms = 1s (6000 = 6s)
                     });
                 </script>
 
+
                 <script>
-                    const button = document.querySelector(".button-pdf");
+                    const button_pdf = document.querySelector(".button-pdf"),
+                    text_pdf = document.querySelector(".text-pdf");
 
-                    button.addEventListener("click", ()=>{
-                    button.classList.add("progress");
+                    button_pdf.addEventListener("click", ()=>{
+                        button_pdf.classList.add("progress-pdf");
+                        text_pdf.innerText = "Завантаження...";
 
-                    setTimeout(()=>{
-                    button.classList.remove("progress"); //remove progress after 6s
-                    },6000); //1000ms = 1s (6000 = 6s)
-
+                        setTimeout(()=>{
+                            button_pdf.classList.remove("progress"); //remove progress after 6s
+                            text_pdf.innerText = "ЗАВАНТАЖЕННО";
+                        },4000); //1000ms = 1s (6000 = 6s)
                     });
                 </script>
 
