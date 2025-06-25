@@ -17,7 +17,7 @@
     padding-top: 160px;
 }
 
-.button {
+.button-app {
     position: relative;
     overflow: hidden;
 
@@ -36,7 +36,7 @@
     margin-block: 20px;
 }
 
-.button::before {
+.button-app::before{
     content: "";
     position: absolute;
     top: 0;
@@ -47,7 +47,7 @@
     border-radius: 6px;
 }
 
-.button.progress::before {
+.button-app.progress-app::before{
     animation: progress 4s ease-in-out forwards;
 }
 
@@ -81,7 +81,7 @@
     border-radius: 6px;
 }
 
-.button-pdf.progress::before{
+.button-pdf.progress-pdf::before {
     animation: progress 4s ease-in-out forwards;
 }
 
@@ -119,6 +119,32 @@
     100%{
     left: 0%;
     }
+}
+
+.text {
+    color: black;
+    margin-top: -5px;
+    margin-left: -13px;
+    font-size: 14px;
+    height: 63px;
+    width: 273px;
+    padding: 8px;
+    padding-left: 10px;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.text-pdf {
+    color: black;
+    margin-top: -5px;
+    margin-left: -13px;
+    font-size: 14px;
+    height: 63px;
+    width: 273px;
+    padding: 8px;
+    padding-left: 10px;
+    padding-top: 20px;
+    position: fixed;
 }
 
 .link {
@@ -193,7 +219,11 @@
 }
 
 @media (max-width: 780px) {
-    .button {
+    .button-app {
+        cursor: auto;
+    }
+
+    .button_pdf {
         cursor: auto;
     }
 }
