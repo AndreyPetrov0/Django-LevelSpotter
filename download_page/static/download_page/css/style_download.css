@@ -1,0 +1,229 @@
+.open_index {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.div_csale {
+    background: transparent;
+    width: 310px;
+    height: 500px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin-top: 120px;
+    padding: 15px;
+    padding-top: 160px;
+}
+
+.button-app {
+    position: relative;
+    overflow: hidden;
+
+    color: black;
+    padding: 5px 13px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: yellow;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s;
+    border: 2px solid black;
+    margin-block: 20px;
+}
+
+.button-app::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: #6DFF05FF;
+    border-radius: 6px;
+}
+
+.button-app.progress-app::before{
+    animation: progress 4s ease-in-out forwards;
+}
+
+.button-pdf {
+    position: relative;
+    overflow: hidden;
+
+    color: black;
+    padding: 5px 13px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: yellow;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s;
+    border: 2px solid black;
+    margin-block: 20px;
+}
+
+.button-pdf::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: #6DFF05FF;
+    border-radius: 6px;
+}
+
+.button-pdf.progress-pdf::before {
+    animation: progress 4s ease-in-out forwards;
+}
+
+@keyframes progress {
+    0%{
+    left: -100%;
+    }
+    10%{
+    left: -97%;
+    }
+    20%{
+    left: -92%;
+    }
+    30%{
+    left: -82%;
+    }
+    30%{
+    left: -62%;
+    }
+    40%{
+    left: -38%;
+    }
+    50%{
+    left: -18%;
+    }
+    60%{
+    left: -14%;
+    }
+    80%{
+    left: -7%;
+    }
+    90%{
+    left: -3%;
+    }
+    100%{
+    left: 0%;
+    }
+}
+
+.text {
+    color: black;
+    margin-top: -5px;
+    margin-left: -13px;
+    font-size: 14px;
+    height: 63px;
+    width: 273px;
+    padding: 8px;
+    padding-left: 10px;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.text-pdf {
+    color: black;
+    margin-top: -5px;
+    margin-left: -13px;
+    font-size: 14px;
+    height: 63px;
+    width: 273px;
+    padding: 8px;
+    padding-left: 10px;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.link {
+    color: black;
+    transition: 0.1s;
+    display: inline-flex;
+}
+
+.link:hover {
+    background-color: yellow;
+    color: yellow;
+}
+
+.link:focus {
+    background-color: yellow;
+    color: yellow;
+}
+
+.link:focus .download-logo {
+    animation: download-l 3s ease forwards 0s ;
+}
+
+@keyframes download-l {
+    0% {
+        padding-left: 8px;
+    }
+}
+
+.download-logo {
+    margin-top: -5px;
+    margin-left: -13px;
+    font-size: 50px;
+    height: 63px;
+    width: 273px;
+    padding: 8px;
+    padding-left: 215px;
+    position: fixed;
+    color: black;
+}
+
+.download-logo:hover {
+    animation: download-hover 1.5s ease forwards 0s;
+}
+
+@keyframes download-hover {
+    100% {
+        padding-left: 8px;
+    }
+}
+
+.bxs-file-pdf {
+    padding-top: 5px;
+    padding-right: 90px;
+    font-size: 43px;
+    height: 50px;
+    width: 40px;
+}
+
+.android-logo {
+    padding-right: 93px;
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.text-btn {
+    font-size: 17px;
+}
+
+.size-app {
+    font-size: 10px;
+}
+
+@media (max-width: 780px) {
+    .button-app {
+        cursor: auto;
+    }
+
+    .button_pdf {
+        cursor: auto;
+    }
+}
