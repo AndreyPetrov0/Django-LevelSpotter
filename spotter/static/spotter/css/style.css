@@ -44,6 +44,7 @@
     cursor: pointer;
     color: black;
     font-weight: 500;
+    border-color: black;
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease;
