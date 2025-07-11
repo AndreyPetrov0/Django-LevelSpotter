@@ -42,10 +42,10 @@
     outline: none;
     border-radius: 15px 2px 15px 2px;
     font-size: 25px;
-    cursor: pointer;
     color: black;
-    font-weight: 300;
+    font-weight: 500;
     border-color: black;
+    font-family: "Montserrat", sans-serif;
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease;
