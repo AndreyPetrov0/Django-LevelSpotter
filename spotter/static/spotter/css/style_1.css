@@ -35,6 +35,9 @@
     font-style: italic;
     font-size: 25px;
     padding: 2px;
+    background: red;
+    white: 300px;
+    height: 60px;
 }
 
 .our-form {
@@ -158,12 +161,12 @@
     }
 
     .btn_num:hover {
-    background-color: yellow;
+    background-color: #E4E452;
     color: black;
     }
 
     .btn_num:active {
-        background-color: #E4E452;
+        background-color: yellow;
         color: black;
     }
 }
