@@ -22,8 +22,8 @@
     color: black;
     text-align: center;
     font-style: italic;
-    font-size: 20px;
-    padding: 6px;
+    font-size: 25px;
+    padding: 12px;
 }
 
 .div-img {
@@ -51,6 +51,7 @@
     height: 40px;
     margin-top: 85px;
     z-index: 2;
+
     text-align: center;
 }
 
@@ -74,9 +75,12 @@
     height: 40px;
     outline: none;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 16px;
     color: white;
     cursor: pointer;
+    border-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 .btn-back:hover {
@@ -95,12 +99,16 @@
     cursor: pointer;
     font-weight: 700;
     transition: all .1s ease-out;
+    border-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 .btn-accept:hover {
     background: #70F670;
     box-shadow: 3px 0 12px 3px #00F600C1;
 }
+
 
 @media (max-width: 780px) {
     .btn-accept {
