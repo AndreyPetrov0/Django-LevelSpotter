@@ -80,7 +80,7 @@
 }
 
 .btn-back {
-    background: #0041E4;
+    background: #0075CF;
     width: 100px;
     height: 40px;
     outline: none;
@@ -99,7 +99,7 @@
 }
 
 .btn-accept {
-    background: #0041E4;
+    background: #0075CF;
     width: 100px;
     height: 40px;
     outline: none;
@@ -128,7 +128,7 @@
 }
 
 .btn_num {
-    background: #E4E452;
+    background: #ECC671;
     width: 70px;
     height: 40px;
     outline: none;
@@ -160,7 +160,7 @@
     }
 
     .btn_num:hover {
-        background-color: #E4E452;
+        background-color: #ECC671;
         color: black;
     }
 
