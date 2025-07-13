@@ -33,7 +33,7 @@
     color: black;
     text-align: center;
     font-style: italic;
-    font-size: 22px;
+    font-size: 25px;
     padding: 2px;
     white: 300px;
     height: 60px;
@@ -167,5 +167,9 @@
     .btn_num:active {
         background-color: yellow;
         color: black;
+    }
+  
+    .title-container {
+        font-size: 22px;
     }
 }
