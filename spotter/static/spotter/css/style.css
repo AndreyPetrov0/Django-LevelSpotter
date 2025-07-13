@@ -62,10 +62,9 @@
     .btn {
         cursor: auto;
     }
-}
 
-@media (max-width: 780px) {
     .title-container {
         font-size: 31px;
     }
 }
+
