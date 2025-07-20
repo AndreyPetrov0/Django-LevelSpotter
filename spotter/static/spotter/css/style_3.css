@@ -18,7 +18,7 @@
 }
 
 .title-container {
-    font-family: "Times New Roman";
+    font-family: "Montserrat", sans-serif;
     color: black;
     text-align: center;
     font-style: italic;
@@ -119,6 +119,6 @@
     }
 
     .title-container {
-        font-size: 21px;
+        font-size: 20px;
     }
 }
