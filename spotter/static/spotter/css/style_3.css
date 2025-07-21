@@ -22,7 +22,7 @@
     color: black;
     text-align: center;
     font-style: italic;
-    font-size: 25px;
+    font-size: 20px;
     padding: 12px;
 }
 
@@ -116,9 +116,5 @@
 
     .btn-back {
         cursor: auto;
-    }
-
-    .title-container {
-        font-size: 20px;
     }
 }
