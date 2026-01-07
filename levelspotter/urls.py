@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from spotter.views import index
+from spotter.views import index, page_not_found
 from download_page.views import page_download
 from instructions.views import instructions
 from start_page.views import page_start
@@ -32,3 +32,5 @@ urlpatterns = [
     path('/download', page_download, name='download'),
     path('/instructions', instructions, name='instructions'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+handler404 = page_not_found

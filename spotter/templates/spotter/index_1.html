@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-wodth, initial-scale=1.0">
 	<link type="text/css" href="{% static 'spotter/css/style_1.css' %}" rel="stylesheet">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script src="{% static 'spotter/js/addDigit.js' %}" defer></script>
 </head>
 
 	<li class="open_index">
@@ -21,13 +22,19 @@
 				<img class="img-index" src="{% static 'spotter/images/img-index_1.png' %}">
 			</div>
 
-			<h1 class="title-container">Введіть коригувальні значення в мм.</h1>
+			<h1 class="title-container">Введіть значення на яке буде скоригований прилад</h1>
 
 			<form method="get" action="{% url 'index_2' %}" name="form_correct">
 
 				<ul class="our-form">
 					<li>
-						<input type="text" class="display_number" name="correct_value" readonly="readonly" placeholder="0">
+						<div class="input-wrapper">
+							<img class="input-icon" src="{% static 'spotter/images/transparent_back.png' %}" id="status-icon">
+
+							<input type="text" id="display-input" class="display_number" name="correct_value" readonly="readonly" placeholder="0" maxlength="3">
+
+							<span class="unit-label">мм</span>
+						</div>
 					</li>
 
 					<li>
@@ -38,37 +45,33 @@
 					</li>
 					<li>
 						<table class="table_number">
-							<script>
-								var maxt=3
-							</script>
-
 							<tr>
-								<td><input type="button" class="btn_num" value="1" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='1'}"></td>
+								<td><input type="button" class="btn_num" value="1" onclick="addDigit('1')"></td>
 
-								<td><input type="button" class="btn_num" value="2" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='2'}"></td>
+								<td><input type="button" class="btn_num" value="2" onclick="addDigit('2')"></td>
 
-								<td><input type="button" class="btn_num" value="3" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='3'}"></td>
+								<td><input type="button" class="btn_num" value="3" onclick="addDigit('3')"></td>
 							</tr>
 							<tr>
-								<td><input type="button" class="btn_num" value="4" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='4'}"></td>
+								<td><input type="button" class="btn_num" value="4" onclick="addDigit('4')"></td>
 
-								<td><input type="button" class="btn_num" value="5" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='5'}"></td>
+								<td><input type="button" class="btn_num" value="5" onclick="addDigit('5')"></td>
 
-								<td><input type="button" class="btn_num" value="6" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='6'}"></td>
+								<td><input type="button" class="btn_num" value="6" onclick="addDigit('6')"></td>
 							</tr>
 							<tr>
-								<td><input type="button" class="btn_num" value="7" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='7'}"></td>
+								<td><input type="button" class="btn_num" value="7" onclick="addDigit('7')"></td>
 
-								<td><input type="button" class="btn_num" value="8" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='8'}"></td>
+								<td><input type="button" class="btn_num" value="8" onclick="addDigit('8')"></td>
 
-								<td><input type="button" class="btn_num" value="9" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='9'}"></td>
+								<td><input type="button" class="btn_num" value="9" onclick="addDigit('9')"></td>
 							</tr>
 							<tr>
-								<td><input type="button" class="btn_num" value="-" onclick="if(form_correct.correct_value.value.length == 0){maxt=4; form_correct.correct_value.value+='-';} else if (form_correct.correct_value.value < 0) {maxt=4; form_correct.correct_value.value-=form_correct.correct_value.value * 2} else if (form_correct.correct_value.value > 0) {maxt=4; form_correct.correct_value.value-=form_correct.correct_value.value * 2} "></td>
+								<td><input type="button" class="btn_num" value="-" onclick="addDigit('-')"></td>
 
-								<td><input type="button" class="btn_num" value="0" onclick="if (form_correct.correct_value.value > 0) {maxt=3} if (form_correct.correct_value.value.length == 0) {form_correct.correct_value.value+=''} else if (form_correct.correct_value.value.length < maxt) {form_correct.correct_value.value+='0'}"></td>
+								<td><input type="button" class="btn_num" value="0" onclick="addDigit('0')"></td>
 
-								<td><input type="button" class="btn_num" value="<" onclick="if (form_correct.correct_value.value.length <= maxt) {form_correct.correct_value.value= form_correct.correct_value.value.slice(0,-1)}"></td>
+								<td><input type="button" class="btn_num" value="<" onclick="addDigit('<')"></td>
 							</tr>
 						</table>
 					</li>
