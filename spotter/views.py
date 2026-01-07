@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponseNotFound
 
 cache = {'csale': 0, 'correct_value': 0, 'number_value': 0}
 
@@ -63,3 +64,5 @@ def  index_3(request):
     function = {'func_calc': calculation_function(cache['csale'], cache['correct_value'], cache['number_value'])}
     return render(request, 'spotter/index_3.html', context=function)
 
+def page_not_found(request, exception):
+    return HttpResponseNotFound("<h1>Сторінка незнайдена</h1>")
