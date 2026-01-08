@@ -53,3 +53,4 @@ function addDigit(input) {
     }
     
     updateIcon(field.value);
+}
