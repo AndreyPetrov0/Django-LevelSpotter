@@ -1,3 +1,5 @@
+{% load static %}
+
 function updateIcon(val) {
     const icon = document.getElementById('status-icon');
     if (!icon) return;
